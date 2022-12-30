@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --font-heading: Sen, sans-serif;
+}
+
+/* Common */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 17px 8px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  background: #171100;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+
+h1 {
+  font-size: 5.8rem;
+  line-height: 1.17;
+}
+
+h2 {
+  font-size: 3.8rem;
+  line-height: 1.26;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+
+/* Header */
+
+.header {
+  position: sticky;
+  top: -28px;
+  left: 0;
+  background: #fffcf4;
+  padding: 36px 0 8px;
+  z-index: 10;
+}
+
+header .body {
+  display: flex;
+  align-items: center;
+}
+
+.header .navbar {
+  margin-left: auto;
+}
+
+.header .navbar ul {
+  display: flex;
+}
+
+.header .action {
+  margin-left: 49px;
+}
+
+.header .menu a {
+  position: relative;
+  padding: 8px 21px;
+  font-size: 1.6rem;
+  color: #5f5b53;
+}
+
+.header .menu .active,
+.header .menu a:hover {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+
+.header .menu .active a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 6px;
+  left: 21px;
+  width: 12px;
+  height: 2px;
+  background: #171100;
+  border-radius: 1px;
+}
+
+.header .sign-up-btn {
+  min-width: 144px;
+}
+
+/* Hero */
+
+.hero {
+  padding: 56px 0 65px 0;
+  background-color: #fffcf4;
+}
+
+.hero .body {
+  display: flex;
+}
+
+/* Hero left */
+
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+
+.hero .img {
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.hero-summary {
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  width: 270px;
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.hero .hero-summary .item {
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero-summary .item .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff9e8;
+}
+
+.hero .hero-summary .item:nth-child(2) .icon {
+  background-color: #fcefff;
+}
+
+.hero .hero-summary .item:nth-child(3) .icon {
+  background-color: #ebeaff;
+}
+
+.hero .hero-summary .info {
+  margin-left: 16px;
+}
+
+.hero .hero-summary .label {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+
+.hero .hero-summary .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+
+/* Hero right */
+
+.hero .info-block {
+  width: 52%;
+  padding: 64px 0 0 130px;
+}
+
+.hero .info-block .desc {
+  margin-top: 22px;
+}
+
+.hero .hero-cta {
+  display: flex;
+  align-items: center;
+  margin: 38px 0 48px 0;
+}
+
+.hero-cta .hero-cta-btn {
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 15px 8px;
+  min-width: 180px;
+  line-height: 1.67;
+  color: #ffffff;
+  background: #ffb900;
+  border-radius: 32px;
+}
+
+.hero-cta .watch-video {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hero-cta .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero-cta .watch-video span {
+  margin-left: 14px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+
+.hero .info-block .stats {
+  margin-left: -28px;
+  margin-top: 8px;
+}
+
+.hero .stats strong {
+  font-family: var(--font-heading);
+  padding: 0 15px 0 28px;
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.4rem;
+  color: #171100;
+}
+
+/* Courses */
+.courses {
+  margin-top: 200px;
+}
+
+.courses .controls {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+
+.courses .controls .chevron-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #ffb900;
+  background-color: #fff;
+  border: 1px solid #ffb900;
+}
+
+.courses .controls .chevron-btn + .chevron-btn {
+  margin-left: 18px;
+}
+
+.courses .controls .chevron-btn:hover {
+  color: #ffb900;
+  background-color: #fff;
+  border: 1px solid #ffb900;
+  background-color: #ffb900;
+  border: none;
+  color: #fff;
+}
+
+.courses .info .desc {
+  margin-top: 16px;
+  width: 458px;
+}
+
+.courses .card-group {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.courses .card-group .card-item {
+  border: 1px solid;
+  border-color: transparent #e2dfda #e2dfda #e2dfda;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.courses .card-group .card-item:hover {
+  border-color: transparent;
+  box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.courses .card-group .card-item .card-img {
+  width: calc(100% + 2px);
+  margin: -1px;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+  vertical-align: bottom;
+}
+
+.courses .card-body {
+  padding: 16px 22px 22px;
+}
+
+.courses .card-body .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+
+.courses .card-body .rating {
+  display: flex;
+  align-items: center;
+}
+
+.courses .card-body .label {
+  color: #fea31b;
+}
+
+.courses .card-body .desc {
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.courses .card-body .price {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #171100;
+}
+
+.courses .card-body .book-btn {
+  padding: 16px 8px;
+}
+
+.courses .card-body .book-btn:hover {
+  background-color: #ffb900;
+}
