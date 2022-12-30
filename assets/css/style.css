@@ -36,6 +36,7 @@ a {
   display: inline-block;
   min-width: 118px;
   padding: 17px 8px;
+  font-family: inherit;
   font-weight: 600;
   font-size: 1.6rem;
   text-align: center;
@@ -378,9 +379,289 @@ header .body {
 }
 
 .courses .card-body .book-btn {
-  padding: 16px 8px;
+  font-size: 1.4rem;
+  padding: 15px 8px;
 }
 
 .courses .card-body .book-btn:hover {
   background-color: #ffb900;
+}
+
+/* Feedback */
+
+.feedback {
+  margin-top: 200px;
+  background-color: #2e2100;
+}
+
+.feedback .content {
+  padding: 96px 0;
+}
+
+.feedback .avatar {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.feedback .comment {
+  width: 66%;
+}
+
+.feedback .user-name {
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #f7f7f7;
+}
+
+.feedback .user-title {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb3;
+}
+
+.feedback .dots {
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.feedback .dot {
+  color: #634700;
+}
+
+.feedback .dot.active {
+  color: #ffb900;
+}
+
+.quote {
+  padding-left: 30px;
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 1.54;
+  color: #ffffff;
+}
+
+/* Register */
+
+.register {
+  margin: 200px 0;
+}
+
+.register .register-left {
+  width: 48%;
+}
+
+.register .register-right {
+  width: 52%;
+  padding-left: 130px;
+  margin-left: auto;
+}
+
+.register .img-1,
+.register .img-2 {
+  width: 100%;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.register .img-1 {
+  margin-top: 33px;
+}
+
+.register .img-2 {
+  margin-bottom: 33px;
+}
+
+.register .img-wrapper {
+  width: calc((100% - 30px) / 2);
+}
+
+.register .img-1 {
+  margin-right: 30px;
+}
+
+.register .desc {
+  margin-top: 16px;
+}
+
+.register .register-btn {
+  font-size: 1.6rem;
+  min-width: 137px;
+  margin-top: 32px;
+  padding: 13px 8px;
+  background: #ffb900;
+  border-radius: 26px;
+}
+
+.register .register-bot {
+  margin-top: 200px;
+}
+
+.register .img-3 {
+  width: 100%;
+  height: 440px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Blog */
+.blog {
+  padding: 96px 0;
+  background-color: #fffcf4;
+}
+
+.blog .heading,
+.blog .desc {
+  text-align: center;
+}
+
+.blog .desc {
+  width: 448px;
+  margin: 16px auto 0;
+}
+
+.blog .card-group {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.blog .card-item {
+  flex: 1;
+
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.blog .thumb {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.blog .card-body {
+  padding: 20px 20px 28px;
+}
+
+.blog .date {
+  display: flex;
+}
+
+.blog .date img {
+  margin-right: 4px;
+}
+
+.blog .date .label {
+  font-size: 1.4rem;
+  color: #5f5b53;
+}
+
+.blog .separate {
+  margin-top: 12px;
+  width: 160px;
+  height: 1px;
+  background: #e2dfda;
+  border-radius: 0.5px;
+}
+
+.blog .card-body .title {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #171100;
+}
+
+.blog .card-body .blog-btn {
+  margin-top: 12px;
+  font-size: 1.4rem;
+  padding: 15px 8px;
+}
+
+.blog .card-body .blog-btn:hover {
+  background-color: #ffb900;
+}
+
+.blog .dots {
+  width: 30px;
+  margin: 38px auto 0;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #2e2100;
+  padding: 96px 0 28px;
+}
+
+.footer .footer-left {
+  width: 23%;
+}
+
+.footer .slogan {
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+
+.footer .social-icon-group {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+}
+
+.footer .main-content .row {
+  align-items: flex-start;
+}
+
+.footer .footer-right {
+  padding-left: 145px;
+  display: flex;
+  gap: 130px;
+}
+.column {
+  flex: 1;
+}
+
+.footer .column-2 {
+  flex: 2;
+}
+
+.column-1 {
+  flex: 3;
+}
+
+.footer .footer-right .title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.footer .footer-right .separate {
+  margin: 14px 0 16px;
+  width: 130px;
+  height: 1px;
+  background: #59554b;
+}
+
+.footer .footer-right .sub-title {
+  margin: 12px 0;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+
+.footer .footer-right .sub-title strong {
+  font-weight: 600;
 }
